@@ -2,7 +2,7 @@ export default {
     async fetch(request, env) {
       let url = new URL(request.url);
       if (url.pathname.startsWith('/')) {
-        url.hostname="www.ltyfuq.asia:1025";
+        url.hostname="boke.ltyfuq.asia";
         let new_request=new Request(url,request);
         return fetch(new_request);
       }
